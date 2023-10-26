@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #191919;
+    display: grid;
+    place-items: center;
+}
+.wrapper{
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box{
+    width: calc(50% - 10px);
+    aspect-ratio: 1/1;
+    border: solid white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.hovered{
+    border-style: dashed;
+}
